@@ -39,7 +39,7 @@ function stopSensor() {
 	$('#sensorX').val("");
 	$('#sensorY').val("");
 	$('#sensorZ').val("");
-	$('#timestamp').val(unixtime);
+	$('#timestamp').val("");
 }
 
 function accelerometerSuccess(acceleration) {
@@ -47,7 +47,7 @@ function accelerometerSuccess(acceleration) {
 	$('#sensorX').val(acceleration.x);
 	$('#sensorY').val(acceleration.y);
 	$('#sensorZ').val(acceleration.z);
-	$('#timestamp').val(acceleration.unixtime);
+	$('#timestamp').val(acceleration.timestamp);
 
 }
 
