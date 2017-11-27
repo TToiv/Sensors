@@ -17,7 +17,7 @@ $(document).on("pagecreate", "#page1", function () {
 	//setup listener for the slider
 	$("#slider").on("slidestop", function() {
 		
-		
+        
 		//the value from the slider is text - it needs to be turned into an integer
 		var freq = parseInt($(this).val());
 		
@@ -56,6 +56,7 @@ function accelerometerError() {
 }
 
 function updateFreq(freq) {
+    accelerometerOptions.frequency = freq;
 	//do something to update freq. here.
 }
 
